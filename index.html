@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hare Krsna</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hare Krsna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hp">
-        <p id="t1">Hare Krsna Hare Krsna</p>
-        <p id="t2">Krsna Krsna Hare Hare</p>
-        <p id="t3">Hare Rama Hare Rama</p>
-        <p id="t4">Rama Rama Hare Hare</p>
-        <img id="i1" src="Radhekrishna.jfif" alt="Lord">
-         <p id="count">0</p>
-        <input id="btn" type="button" value="+" onclick="increment()">
-        <input id="btn1" type="button" value="-" onclick="decrement()">
-         <input type="button" value="SAVE" id="btn2" onclick="save()">
-         <input type="button" value="RESET" id="btn3" onclick="reset()">
-        </div>
-        <div id="savedCounts">
-            <h2 id="t5">Saved Counts : </h2>
-        </div>
-               <script src="index.js"></script>
+  <div class="hp">
+    <p id="t1">Hare Krsna Hare Krsna</p>
+    <p id="t2">Krsna Krsna Hare Hare</p>
+    <p id="t3">Hare Rama Hare Rama</p>
+    <p id="t4">Rama Rama Hare Hare</p>
+
+    <img id="i1" src="Radhekrishna.jfif" alt="Lord">
+
+    <p id="count">0</p>
+
+    <!-- Single button group only -->
+    <div class="btn-group">
+      <input id="btn" type="button" value="+" onclick="increment()" />
+      <input id="btn1" type="button" value="-" onclick="decrement()" />
+      <input id="btn2" type="button" value="SAVE" onclick="save()" />
+      <input id="btn3" type="button" value="RESET" onclick="reset()" />
+    </div>
+  </div>
+
+  <!-- Saved Counts Bar -->
+  <div id="savedCounts">
+    <h2 id="t5">Saved Counts : </h2>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
